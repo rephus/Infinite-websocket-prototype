@@ -1,8 +1,6 @@
-# Work in progress
-
 ## Description
 
-Proceduraly generated RPG multiplager game with websockets
+Proceduraly generated infinite multiplager scalable game with websockets
 
 ![images/screen1.png](images/screen1.png)
 
