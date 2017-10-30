@@ -4,7 +4,7 @@ var user, sector;
 function connect() {
    if ("WebSocket" in window) {
       log("Opening websocket!");
-      ws = new WebSocket("ws://localhost:8001/");
+      ws = new WebSocket("ws://localhost:8001/"); 
 
       ws.onopen = function(){
          //ws.send("ping");

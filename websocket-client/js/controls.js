@@ -12,14 +12,17 @@ addEventListener("keyup", function (e) {
 }, false);
 
 
+/*
 addEventListener("click", function(e) {
 	var x = e.pageX - canvas.offsetLeft ;
 	var y = e.pageY - canvas.offsetTop;
 
 	var world = worldPosition(x,y);
 	console.log("click ",x,y, " to world ",world);
-	player.following = world;
-}, false);
+	//player.following = world;
+	//user.position = [parseInt(x),parseInt(y)];
+	
+}, false);*/
 
 var worldPosition = function(x,y) {
 	var originWorld = camera.origin();

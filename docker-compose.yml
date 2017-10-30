@@ -1,0 +1,23 @@
+version: '2'
+services:
+  redis:
+    image: redis
+    ports: 
+        - "6379:6379"
+  server: 
+    build: websocket-server
+    volumes:
+    - ./websocket-server:/app
+    - /app/node_modules
+    ports: 
+        - "8001:8001"
+    depends_on:
+        - redis
+  client: 
+    build: websocket-client
+    volumes:
+    - ./websocket-client:/app
+    ports: 
+        - "8000:8000"
+    depends_on:
+        - server

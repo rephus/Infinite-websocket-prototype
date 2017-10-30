@@ -1,7 +1,7 @@
 
 var ws = require("nodejs-websocket");
 
-global.redis = require('redis').createClient();
+global.redis = require('redis').createClient(6379, 'redis');
 
 var SECTOR_SIZE = 100;
 
